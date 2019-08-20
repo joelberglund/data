@@ -1,7 +1,7 @@
 # data e nice
 
 ## Config ##
-Vi kör InteliJ, alternativt VS-code. Så man får fixa licens om man inte har.
+Vi kör InteliJ, alternativt VS-code. Så man får fixa licens om man inte har. För att fixa licens mejla IT.
 
 ## Schema ##
 ### V-34 ###
@@ -11,7 +11,7 @@ Första mötet!
 1. Göra 1.1, 1.2, 1.3 https://kafka.apache.org/documentation/
 Quickstart kan man läsa här också vilket är lite softare: https://kafka.apache.org/quickstart
 #### Vad vi ska göra ####
-Gör https://dzone.com/articles/hands-on-apache-kafka-with-scala
+https://dzone.com/articles/hands-on-apache-kafka-with-scala
 och https://kafka.apache.org/23/documentation/streams/tutorial
 
 
