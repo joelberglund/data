@@ -14,5 +14,12 @@ Quickstart kan man läsa här också vilket är lite softare: https://kafka.apac
 https://dzone.com/articles/hands-on-apache-kafka-with-scala
 och https://kafka.apache.org/23/documentation/streams/tutorial
 
+### V-36 ###
+Förbered IDE och baeldung (installera maven etc.)
+
+Gör denna: https://www.baeldung.com/java-kafka-streams
+
+Fortsätta på  (https://kafka.apache.org/23/documentation/streams/tutorial)
+
 
 
