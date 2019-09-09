@@ -21,5 +21,13 @@ Gör denna: https://www.baeldung.com/java-kafka-streams
 
 Fortsätta på  (https://kafka.apache.org/23/documentation/streams/tutorial)
 
+### V-37 ###
+Vi gjorde https://kafka.apache.org/23/documentation/streams/quickstart
+
+Att förbereda om man inte har det: https://maven.apache.org/install.html och
+java8 https://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac och
+https://gradle.org/install/
+
+Nästa gång ska vi göra: https://kafka.apache.org/23/documentation/streams/tutorial
 
 
