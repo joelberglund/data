@@ -30,4 +30,10 @@ https://gradle.org/install/
 
 Nästa gång ska vi göra: https://kafka.apache.org/23/documentation/streams/tutorial
 
+### V-38 ###
+Till nästa gång försök göra: 
+https://kafka.apache.org/23/documentation/streams/core-concepts
+https://kafka.apache.org/23/documentation/streams/architecture
+
+Nästa gång ska vi försöka koppla upp oss mot Twitter API och att på något sätt få in Kafka i det.
 
