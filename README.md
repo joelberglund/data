@@ -37,8 +37,3 @@ https://kafka.apache.org/23/documentation/streams/architecture
 
 Nästa gång ska vi försöka koppla upp oss mot Twitter API och att på något sätt få in Kafka i det.
 
-### V-39 ###
-Till nästa vecka kan det vara bra att läsa om kafka med python. 
-
-Komma på möjliga projekt vi kan göra.
-T.ex. streama in Twitterdata från twitter API och med kafka logga/filtrera på specifika användare.
