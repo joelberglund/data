@@ -39,3 +39,6 @@ Nästa gång ska vi försöka koppla upp oss mot Twitter API och att på något 
 
 https://dev.to/dbsheta/processing-streaming-twitter-data-using-kafka-and-spark-part-2-creating-kafka-twitter-streamproducer-12ko
 
+### V-39 ###
+
+Fixa Jupiter på AWS. Börja koppla upp Twitter kafka
