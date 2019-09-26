@@ -37,3 +37,5 @@ https://kafka.apache.org/23/documentation/streams/architecture
 
 Nästa gång ska vi försöka koppla upp oss mot Twitter API och att på något sätt få in Kafka i det.
 
+https://dev.to/dbsheta/processing-streaming-twitter-data-using-kafka-and-spark-part-2-creating-kafka-twitter-streamproducer-12ko
+
