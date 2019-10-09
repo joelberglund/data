@@ -1,7 +1,9 @@
 import twitter
 import os
+from kafka import KafkaProducer
 from dotenv import load_dotenv
 load_dotenv()
+
 
 apiKey = os.getenv('apiKey')
 apiSecretKey = os.getenv('apiSecretKey')
@@ -12,9 +14,12 @@ api = twitter.Api(consumer_key=apiKey,consumer_secret=apiSecretKey,access_token_
 
 print(api.VerifyCredentials())
 
+producer = KafkaProducer(bootstrap_servers='localhost:1234')
+
 stream = api.GetStreamFilter(track=["@SwedishPM"])
 for tweet in stream:
     print(tweet)
+    producer.send('twitter-topic', tweet.encode())
 
 '''
 GetStreamFilter(follow=None, track=None, locations=None, languages=None, delimited=None, stall_warnings=None, filter_level=None)[source]
