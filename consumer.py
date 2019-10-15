@@ -1,4 +1,7 @@
 from kafka import KafkaConsumer
-consumer = KafkaConsumer('twitter-topic')
+import json
+consumer = KafkaConsumer('twitter-topic', group_id='my-group')
+
 for msg in consumer:
-    print (msg)
+    hej = json.loads(msg.value)['text']
+    print (json.loads(msg.value)['text'])

@@ -1,5 +1,6 @@
 import twitter
 import os
+import json
 from kafka import KafkaProducer
 from dotenv import load_dotenv
 load_dotenv()
@@ -14,12 +15,15 @@ api = twitter.Api(consumer_key=apiKey,consumer_secret=apiSecretKey,access_token_
 
 print(api.VerifyCredentials())
 
-producer = KafkaProducer(bootstrap_servers='localhost:1234')
+#producer = KafkaProducer(bootstrap_servers='localhost:9092')
 
-stream = api.GetStreamFilter(track=["@SwedishPM"])
+producer = KafkaProducer(value_serializer=lambda m: json.dumps(m).encode('ascii'))
+#producer.send('json-topic', {'key': 'value'})
+
+stream = api.GetStreamFilter(track=["Business"])
 for tweet in stream:
     print(tweet)
-    producer.send('twitter-topic', tweet.encode())
+    producer.send('twitter-topic', tweet)
 
 '''
 GetStreamFilter(follow=None, track=None, locations=None, languages=None, delimited=None, stall_warnings=None, filter_level=None)[source]

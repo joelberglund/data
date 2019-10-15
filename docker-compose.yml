@@ -127,6 +127,20 @@ services:
       KSQL_PRODUCER_INTERCEPTOR_CLASSES: "io.confluent.monitoring.clients.interceptor.MonitoringProducerInterceptor"
       KSQL_CONSUMER_INTERCEPTOR_CLASSES: "io.confluent.monitoring.clients.interceptor.MonitoringConsumerInterceptor"
 
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    ports:
+      - 54321:54321
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
   ksql-cli:
     image: confluentinc/cp-ksql-cli:5.3.1
     container_name: ksql-cli
